@@ -1,9 +1,8 @@
 package com.testerh.testerh.Enum;
 
-public enum FaixaSalario {
-    FAIXA1(1000.0), FAIXA2, FAIXA3;
+import com.testerh.testerh.Salario;
 
-    private (double valor) {
-        this.valor = valor;
-    }
+public enum FaixaSalario {
+    FAIXA1(), FAIXA2(), FAIXA3();
+
 }
