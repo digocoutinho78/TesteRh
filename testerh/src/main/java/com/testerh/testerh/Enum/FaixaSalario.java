@@ -3,8 +3,15 @@ package com.testerh.testerh.Enum;
 import com.testerh.testerh.Salario;
 
 public enum FaixaSalario {
-    FAIXA1(getValor1), FAIXA2(getValor2), FAIXA3(getValor3);
+    FAIXA1(1000), FAIXA2(2000), FAIXA3(3000);
 
+    int valor;
 
+    FaixaSalario(int valor) {
+        this.valor = valor;
+    }
 
+    int getValor() {
+        return valor;
+    }
 }
