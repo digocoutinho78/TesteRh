@@ -15,7 +15,7 @@ public class TesterhApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TesterhApplication.class, args);
 
-		final Funcionario func1 = new Funcionario(01, "Rodrigo Coutinho", "1234567921", "Rua dos bobos,00", "101010", "5050"
+		final Funcionario func1 = new Funcionario(01, "Rodrigo Coutinho", "1234567921", "Rua dos bobos,00", "101010", 
 				Funcao.ATENDENTE, "10/02/22") {
 
 		};
