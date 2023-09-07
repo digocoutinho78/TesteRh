@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.testerh.testerh.Funcionario;
 import com.testerh.testerh.Pessoa;
 import com.testerh.testerh.Enum.Funcao;
+import com.testerh.testerh.Enum.Setor;
 
 
 
@@ -16,7 +17,7 @@ public class TesterhApplication {
 		SpringApplication.run(TesterhApplication.class, args);
 
 		final Funcionario func1 = new Funcionario(01, "Rodrigo Coutinho", "1234567921", "Rua dos bobos,00", "101010", 
-				Funcao.ATENDENTE, "10/02/22") {
+				Funcao.ATENDENTE, Setor.ATENDIMENTO, "10/02/22") {
 
 		};
 
