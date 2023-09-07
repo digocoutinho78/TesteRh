@@ -7,6 +7,7 @@ import com.testerh.testerh.Funcionario;
 import com.testerh.testerh.Pessoa;
 import com.testerh.testerh.Enum.Funcao;
 import com.testerh.testerh.Enum.Setor;
+import com.testerh.testerh.Atendente;
 
 
 
@@ -16,11 +17,12 @@ public class TesterhApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TesterhApplication.class, args);
 
-		final Funcionario func1 = new Funcionario(01, "Rodrigo Coutinho", "1234567921", "Rua dos bobos,00", "101010", 
-				Funcao.ATENDENTE, Setor.ATENDIMENTO, "10/02/22") {
+		Atendente atend1 = new Atendente(01, "Rodrigo Coutinho", "12345678921", "Rua dos bobos, 01", "5050", Funcao.ATENDENTE, Setor.ATENDIMENTO, "15/10/23");
+		atend1.setSalarioAtendente(atend1.getSalarioAtendente());  // aqui está sendo confirmado que o valor de salario é o que consta dentro da variavel Atendente. Este valor não pode ser setado no momento da criação do atend1.
 
-		};
+		System.out.println(atend1.getSalarioAtendente());
 
 	}
+	
 
 }
