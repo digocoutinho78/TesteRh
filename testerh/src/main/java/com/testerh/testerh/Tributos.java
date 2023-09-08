@@ -2,15 +2,15 @@ package com.testerh.testerh;
 import com.testerh.testerh.Atendente;
 public class Tributos {
     
-    public double fgts = 0.8;
-    public int decimoTerSalario = Atendente.getSalarioAtendente / 12;
-    public int ferias = Atendente.getSalarioAtendente / 12;
+    public double fgts = 0.08;
+    public int decimoTerSalario =  12;
+    public int ferias =  12;
     public double inss = 0.08;
 
   
 
 
-    public Tributos(double fgts, int decimoTerSalario, int ferias, double inss) {
+    public Tributos() {
         this.fgts = fgts;
         this.decimoTerSalario = decimoTerSalario;
         this.ferias = ferias;
