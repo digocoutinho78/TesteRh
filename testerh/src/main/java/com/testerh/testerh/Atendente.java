@@ -6,22 +6,23 @@ import com.testerh.testerh.Enum.Setor;
 public class  Atendente extends Funcionario{
 
 
-    private int salarioAtendente;
+    public static int getSalarioAtendente;
+    private static int salarioAtendente;
 
 
     public Atendente(int id, String nome, String cpf, String endereco, String matricula, Funcao funcao, Setor setor,
             String dataContrato) {
         super(id, nome, cpf, endereco, matricula, funcao, setor, dataContrato);
-        this.salarioAtendente = 1000; //valor de salario exclusivo do atendente privado
+        Atendente.salarioAtendente = 1000; //valor de salario exclusivo do atendente privado
     
     }
 
-    public int getSalarioAtendente() {
+    public static int getSalarioAtendente() {
         return salarioAtendente;
     }
 
     public void setSalarioAtendente(int salarioAtendente) {
-        this.salarioAtendente = salarioAtendente;
+        Atendente.salarioAtendente = salarioAtendente;
     }
 
 
