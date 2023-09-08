@@ -2,11 +2,11 @@ package com.testerh.testerh;
 import com.testerh.testerh.Atendente;
 public class Tributos {
     
-    public double fgts = 0.08;
-    public int decimoTerSalario =  12;
-    public int ferias =  12;
-    public double inss = 0.08;
-    public double salarioLiquido = (Atendente.getSalarioAtendente() - (Atendente.getSalarioAtendente ()* fgts ) - (Atendente.getSalarioAtendente ()/ ferias) - (Atendente.getSalarioAtendente ()* inss ) - (Atendente.getSalarioAtendente ()/ decimoTerSalario));
+    public double fgts = (Atendente.getSalarioAtendente ()* 0.08);
+    public int decimoTerSalario =  (Atendente.getSalarioAtendente ()/ 12);
+    public int ferias =  (Atendente.getSalarioAtendente ()/ 12);
+    public double inss = (Atendente.getSalarioAtendente ()* 0.08);
+    public double salarioLiquido = (Atendente.getSalarioAtendente() -  fgts - ferias- inss -  decimoTerSalario);
 
 
     //public double salarioLiquido = Atendente.getSalarioAtendente - (Atendente.getSalarioAtendente * fgts) - (Atendente.getSalarioAtendente / ferias) - (Atendente.getSalarioAtendente * fgts);

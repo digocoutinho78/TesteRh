@@ -32,9 +32,13 @@ public class TesterhApplication {
 		System.out.println("        Salario ATENDENTE BRUTO: " + atend1.getSalarioAtendente() + " ->   \u30FD(\u00B4\u25BD`)/");
 		System.out.println("______________________________________________________");
 		System.out.println("***************DESCONTOS***************");
-		System.out.println("           Valor ATENDENTE INSS: " + atend1.getSalarioAtendente() * tributos.getInss());
-		System.out.println("           Valor ATENDENTE FGTS: " + atend1.getSalarioAtendente() * tributos.getFgts());
-		System.out.println("     Valor ATENDENTE 13 Salario: " + atend1.getSalarioAtendente() / tributos.getDecimoTerSalario());
+		System.out.println("");
+		System.out.println("           Valor ATENDENTE INSS: " + tributos.getInss());
+		System.out.println("           Valor ATENDENTE FGTS: " + tributos.getFgts());
+		System.out.println("         Valor ATENDENTE FERIAS: " + tributos.getFerias());
+		System.out.println("     Valor ATENDENTE 13 Salario: " + tributos.getDecimoTerSalario());
+		System.out.println("");
+		System.out.println("                TOTAL DESCONTOS: " + ((tributos.getFgts()) + (tributos.getDecimoTerSalario()+ tributos.getFerias()+tributos.getInss()+tributos.getFgts())));
 		System.out.println("______________________________________________________");
 		System.out.println("Valor ATENDENTE LÍQUIDO salário: " + tributos.salarioLiquido + " ->  \u00AF\\_(\u30C4)_/\u00AF");
 		System.out.println("______________________________________________________");
