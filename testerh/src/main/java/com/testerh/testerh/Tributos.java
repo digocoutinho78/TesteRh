@@ -1,6 +1,7 @@
 package com.testerh.testerh;
 import com.testerh.testerh.Atendente;
 public class Tributos {
+    // recebe valor salario atendente e calcula os impostos
     
     public double fgts = (Atendente.getSalarioAtendente ()* 0.08);
     public int decimoTerSalario =  (Atendente.getSalarioAtendente ()/ 12);
@@ -9,7 +10,7 @@ public class Tributos {
     public double salarioLiquido = (Atendente.getSalarioAtendente() -  fgts - ferias- inss -  decimoTerSalario);
 
 
-    //public double salarioLiquido = Atendente.getSalarioAtendente - (Atendente.getSalarioAtendente * fgts) - (Atendente.getSalarioAtendente / ferias) - (Atendente.getSalarioAtendente * fgts);
+
    
     public Tributos() {
         this.fgts = fgts;

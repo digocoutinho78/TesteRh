@@ -12,8 +12,8 @@ public class  Atendente extends Funcionario{
 
     public Atendente(int id, String nome, String cpf, String endereco, String matricula, Funcao funcao, Setor setor,
             String dataContrato) {
-        super(id, nome, cpf, endereco, matricula, funcao, setor, dataContrato);
-        Atendente.salarioAtendente = 1000; //valor de salario exclusivo do atendente privado
+        super(id, nome, cpf, endereco, matricula, funcao, setor, dataContrato); // herdado da abstrata Pessoa
+        Atendente.salarioAtendente = 1000; //valor de salario exclusivo do cargo atendente - dado privado
     
     }
 
