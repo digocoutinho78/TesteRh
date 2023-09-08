@@ -54,7 +54,7 @@ public class TesterhApplication {
 		System.out.println("     Valor ATENDENTE 13 Salario: " + tributos.getDecimoTerSalario());
 		System.out.println("");
 		System.out.println("                TOTAL DESCONTOS: " + ((tributos.getFgts())
-				+ (tributos.getDecimoTerSalario() + tributos.getFerias() + tributos.getInss() + tributos.getFgts())));
+				+ (tributos.getDecimoTerSalario() + tributos.getFerias() + tributos.getInss() + tributos.getFgts()))); // limitar decimais.
 		System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - ");
 		System.out.println(
 				"Valor ATENDENTE LÍQUIDO salário: " + tributos.salarioLiquido + " ->  \u00AF\\_(\u30C4)_/\u00AF");
