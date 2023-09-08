@@ -28,16 +28,16 @@ public class TesterhApplication {
 		Tributos tributos = new Tributos() ;
 		//tributos.setFgts(tributos.getFgts());
 		
-		System.out.println("______________________________________________");
-		System.out.println("Salario ATENDENTE BRUTO: " + atend1.getSalarioAtendente() + "         \u30FD(\u00B4\u25BD`)/");
-		System.out.println("______________________________________________");
-		System.out.println("************DESCONTOS************");
-		System.out.println("   Valor ATENDENTE INSS: " + atend1.getSalarioAtendente() * tributos.getInss());
-		System.out.println("             Valor FGTS: " + atend1.getSalarioAtendente() * tributos.getFgts());
-		System.out.println("       Valor 13 Salario: " + atend1.getSalarioAtendente() / tributos.getDecimoTerSalario());
-		System.out.println("______________________________________________");
-		System.out.println("   Valor LÍQUIDO salário: " + tributos.salarioLiquido + "       \u00AF\\_(\u30C4)_/\u00AF");
-		System.out.println("______________________________________________");
+		System.out.println("______________________________________________________");
+		System.out.println("        Salario ATENDENTE BRUTO: " + atend1.getSalarioAtendente() + " ->   \u30FD(\u00B4\u25BD`)/");
+		System.out.println("______________________________________________________");
+		System.out.println("***************DESCONTOS***************");
+		System.out.println("           Valor ATENDENTE INSS: " + atend1.getSalarioAtendente() * tributos.getInss());
+		System.out.println("           Valor ATENDENTE FGTS: " + atend1.getSalarioAtendente() * tributos.getFgts());
+		System.out.println("     Valor ATENDENTE 13 Salario: " + atend1.getSalarioAtendente() / tributos.getDecimoTerSalario());
+		System.out.println("______________________________________________________");
+		System.out.println("Valor ATENDENTE LÍQUIDO salário: " + tributos.salarioLiquido + " ->  \u00AF\\_(\u30C4)_/\u00AF");
+		System.out.println("______________________________________________________");
 
 	}
 	
