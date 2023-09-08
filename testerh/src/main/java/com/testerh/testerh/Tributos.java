@@ -6,15 +6,17 @@ public class Tributos {
     public int decimoTerSalario =  12;
     public int ferias =  12;
     public double inss = 0.08;
+    public double salarioLiquido = (Atendente.getSalarioAtendente() - (Atendente.getSalarioAtendente ()* fgts ) - (Atendente.getSalarioAtendente ()/ ferias) - (Atendente.getSalarioAtendente ()* inss ) - (Atendente.getSalarioAtendente ()/ decimoTerSalario));
 
-  
 
-
+    //public double salarioLiquido = Atendente.getSalarioAtendente - (Atendente.getSalarioAtendente * fgts) - (Atendente.getSalarioAtendente / ferias) - (Atendente.getSalarioAtendente * fgts);
+   
     public Tributos() {
         this.fgts = fgts;
         this.decimoTerSalario = decimoTerSalario;
         this.ferias = ferias;
         this.inss = inss;
+        this.salarioLiquido = salarioLiquido;
     }
     public  double getFgts() {
         return fgts;
@@ -39,6 +41,12 @@ public class Tributos {
     }
     public void setInss(double inss) {
         this.inss = inss;
+    }
+       public double getSalarioLiquido() {
+        return salarioLiquido;
+    }
+    public void setSalarioLiquido(double salarioLiquido) {
+        this.salarioLiquido = salarioLiquido;
     }
 
 }

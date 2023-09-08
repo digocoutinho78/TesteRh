@@ -2,6 +2,7 @@ package com.testerh.testerh;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.core.codec.AbstractEncoder;
 
 import com.testerh.testerh.Funcionario;
 import com.testerh.testerh.Pessoa;
@@ -32,7 +33,7 @@ public class TesterhApplication {
 		System.out.println("Valor inss: " + atend1.getSalarioAtendente() * tributos.getInss());
 		System.out.println("Valor FGTS: " + atend1.getSalarioAtendente() * tributos.getFgts());
 		System.out.println("Valor 13 Salario: " + atend1.getSalarioAtendente() / tributos.getDecimoTerSalario());
-		System.out.println("Valor líquido salário: " + atend1.getSalarioAtendente() * tributos.getInss());
+		System.out.println("Valor líquido salário: " + tributos.salarioLiquido);
 
 	}
 	
