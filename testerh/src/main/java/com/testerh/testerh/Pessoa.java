@@ -2,7 +2,7 @@ package com.testerh.testerh;
 
 import javax.swing.Spring;
 
-public abstract class Pessoa {
+public abstract class Pessoa {  // substitui a interface
     int id;
     String nome;
     String cpf;

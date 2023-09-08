@@ -8,6 +8,7 @@ import com.testerh.testerh.Pessoa;
 import com.testerh.testerh.Enum.Funcao;
 import com.testerh.testerh.Enum.Setor;
 import com.testerh.testerh.Atendente;
+import com.testerh.testerh.Tributos;
 
 
 
@@ -21,6 +22,9 @@ public class TesterhApplication {
 		atend1.setSalarioAtendente(atend1.getSalarioAtendente());  // aqui está sendo confirmado que o valor de salario é o que consta dentro da variavel Atendente. Este valor não pode ser setado no momento da criação do atend1.
 
 		System.out.println(atend1.getSalarioAtendente());
+
+		System.out.println(atend1.getSalarioAtendente() * Tributos.getFgts());
+
 
 	}
 	
