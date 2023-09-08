@@ -3,18 +3,16 @@ package com.testerh.testerh;
 import com.testerh.testerh.Enum.Funcao;
 import com.testerh.testerh.Enum.Setor;
 
-public class  Atendente extends Funcionario{
-
+public class Atendente extends Funcionario {
 
     public static int getSalarioAtendente;
     private static int salarioAtendente;
 
-
     public Atendente(int id, String nome, String cpf, String endereco, String matricula, Funcao funcao, Setor setor,
             String dataContrato) {
         super(id, nome, cpf, endereco, matricula, funcao, setor, dataContrato); // herdado da abstrata Pessoa
-        Atendente.salarioAtendente = 1000; //valor de salario exclusivo do cargo atendente - dado privado
-    
+        Atendente.salarioAtendente = 1000; // valor de salario exclusivo do cargo atendente - dado privado
+
     }
 
     public static int getSalarioAtendente() {
@@ -25,11 +23,4 @@ public class  Atendente extends Funcionario{
         Atendente.salarioAtendente = salarioAtendente;
     }
 
-
-
-
-
-
-    
-    
 }

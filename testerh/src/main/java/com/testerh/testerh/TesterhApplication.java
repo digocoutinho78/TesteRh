@@ -12,22 +12,22 @@ import com.testerh.testerh.Atendente;
 import com.testerh.testerh.Diretor;
 import com.testerh.testerh.Tributos;
 
-
-
 @SpringBootApplication
 public class TesterhApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TesterhApplication.class, args);
 
-		Atendente atend1 = new Atendente(01, "Rodrigo Coutinho", "12345678921", "Rua dos bobos, 01", "5050", Funcao.ATENDENTE, Setor.ATENDIMENTO, "15/10/23");
-		atend1.setSalarioAtendente(atend1.getSalarioAtendente());  // aqui está sendo confirmado que o valor de salario é o que consta dentro da variavel Atendente. Este valor não pode ser setado no momento da criação do atend1.
+		Atendente atend1 = new Atendente(01, "Rodrigo Coutinho", "12345678921", "Rua dos bobos, 01", "5050",
+				Funcao.ATENDENTE, Setor.ATENDIMENTO, "15/10/23");
+		atend1.setSalarioAtendente(atend1.getSalarioAtendente()); // aqui está sendo confirmado que o valor de salario é
+																	// o que consta dentro da variavel Atendente. Este
+																	// valor não pode ser setado no momento da criação
+																	// do atend1.
 
-		
-		
-		Tributos tributos = new Tributos() ;
-		
-		//Dados do Funcionário e Folha pagamento:
+		Tributos tributos = new Tributos();
+
+		// Dados do Funcionário e Folha pagamento:
 		System.out.println("****************   DADOS FUNCIONÁRIO   ***************");
 		System.out.println("______________________________________________________");
 		System.out.println("MATRÍCULA: " + atend1.matricula); // pq null?
@@ -41,7 +41,8 @@ public class TesterhApplication {
 		System.out.println("______________________________________________________");
 		System.out.println("***************   FOLHA DE PAGAMENTO   ***************");
 		System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - ");
-		System.out.println("        Salario ATENDENTE BRUTO: " + atend1.getSalarioAtendente() + " ->   \u30FD(\u00B4\u25BD`)/");
+		System.out.println(
+				"        Salario ATENDENTE BRUTO: " + atend1.getSalarioAtendente() + " ->   \u30FD(\u00B4\u25BD`)/");
 		System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - ");
 		System.out.println("********************   DESCONTOS   *******************");
 		System.out.println("");
@@ -50,12 +51,13 @@ public class TesterhApplication {
 		System.out.println("         Valor ATENDENTE FERIAS: " + tributos.getFerias());
 		System.out.println("     Valor ATENDENTE 13 Salario: " + tributos.getDecimoTerSalario());
 		System.out.println("");
-		System.out.println("                TOTAL DESCONTOS: " + ((tributos.getFgts()) + (tributos.getDecimoTerSalario()+ tributos.getFerias()+tributos.getInss()+tributos.getFgts())));
+		System.out.println("                TOTAL DESCONTOS: " + ((tributos.getFgts())
+				+ (tributos.getDecimoTerSalario() + tributos.getFerias() + tributos.getInss() + tributos.getFgts())));
 		System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - ");
-		System.out.println("Valor ATENDENTE LÍQUIDO salário: " + tributos.salarioLiquido + " ->  \u00AF\\_(\u30C4)_/\u00AF");
+		System.out.println(
+				"Valor ATENDENTE LÍQUIDO salário: " + tributos.salarioLiquido + " ->  \u00AF\\_(\u30C4)_/\u00AF");
 		System.out.println("______________________________________________________");
 
 	}
-	
 
 }
