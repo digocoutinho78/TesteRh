@@ -47,7 +47,7 @@ public class TesterhApplication {
 		System.out.println("********************   DESCONTOS   *******************");
 		System.out.println("");
 		System.out.println("           Valor ATENDENTE INSS: " + tributos.getInss());
-		System.out.println("           Valor ATENDENTE FGTS: " + tributos.getFgts());
+		System.out.println("           Valor ATENDENTE FGTS: " + tributos.getFgtsFinal());
 		System.out.println("         Valor ATENDENTE FERIAS: " + tributos.getFerias());
 		System.out.println("     Valor ATENDENTE 13 Salario: " + tributos.getDecimoTerSalario());
 		System.out.println("");
@@ -57,6 +57,8 @@ public class TesterhApplication {
 		System.out.println(
 				"Valor ATENDENTE LÍQUIDO salário: " + tributos.salarioLiquido + " ->  \u00AF\\_(\u30C4)_/\u00AF");
 		System.out.println("______________________________________________________");
+
+			System.out.println(tributos.getFgts()); //fgts nao calcula
 
 	}
 

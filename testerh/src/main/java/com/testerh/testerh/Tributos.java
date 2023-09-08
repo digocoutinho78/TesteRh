@@ -3,20 +3,48 @@ package com.testerh.testerh;
 import com.testerh.testerh.Atendente;
 
 public class Tributos {
-    // recebe valor salario atendente e calcula os impostos
 
-    public double fgts = (Atendente.getSalarioAtendente() * 0.08);
-    public int decimoTerSalario = (Atendente.getSalarioAtendente() / 12);
-    public int ferias = (Atendente.getSalarioAtendente() / 12);
-    public double inss = (Atendente.getSalarioAtendente() * 0.08);
-    public double salarioLiquido = (Atendente.getSalarioAtendente() - fgts - ferias - inss - decimoTerSalario);
+    
+    int ValorSalario = Atendente.getSalarioAtendente();
+    public double fgts;
 
+                    void CalculoFGTS() {
+
+                    if (ValorSalario >= 1000) {
+                        fgts = 0.08;
+                    } else {
+                        fgts = 0.15;
+
+                    }
+
+                }
+
+    public int decimoTerSalario = ValorSalario / 12;
+    public int ferias = ValorSalario / 12;
+    public double inss = ValorSalario * 0.08;
+    public double salarioLiquido = ValorSalario - fgts - ferias - inss - decimoTerSalario;
+    public double fgtsFinal = ValorSalario * fgts;
+
+     
     public Tributos() {
         this.fgts = fgts;
         this.decimoTerSalario = decimoTerSalario;
         this.ferias = ferias;
         this.inss = inss;
         this.salarioLiquido = salarioLiquido;
+        this.fgtsFinal = fgtsFinal;
+
+
+    }
+
+
+
+  public void setFgtsFinal(double fgtsFinal) {
+        this.fgtsFinal = fgtsFinal;
+    }
+
+    public double getFgtsFinal() {
+        return fgtsFinal;
     }
 
     public double getFgts() {
@@ -58,5 +86,8 @@ public class Tributos {
     public void setSalarioLiquido(double salarioLiquido) {
         this.salarioLiquido = salarioLiquido;
     }
+
+
+
 
 }
