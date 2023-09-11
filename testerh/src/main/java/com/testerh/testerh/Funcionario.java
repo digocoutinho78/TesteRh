@@ -7,7 +7,7 @@ public abstract class Funcionario extends Pessoa {
 
     public Funcionario(int id, String nome, String cpf, String endereco, String matricula, Funcao funcao, Setor setor,
             String dataContrato) {
-        super(id, nome, cpf, endereco);
+        super(id, nome, cpf, endereco); // herdado de Pessoa
 
     }
 
@@ -15,5 +15,37 @@ public abstract class Funcionario extends Pessoa {
     Funcao funcao;
     String dataContrato;
     Setor setor;
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public Funcao getFuncao() {
+        return funcao;
+    }
+
+    public void setFuncao(Funcao funcao) {
+        this.funcao = funcao;
+    }
+
+    public String getDataContrato() {
+        return dataContrato;
+    }
+
+    public void setDataContrato(String dataContrato) {
+        this.dataContrato = dataContrato;
+    }
+
+    public Setor getSetor() {
+        return setor;
+    }
+
+    public void setSetor(Setor setor) {
+        this.setor = setor;
+    }
 
 }

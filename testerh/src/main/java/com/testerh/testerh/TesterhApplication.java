@@ -30,14 +30,14 @@ public class TesterhApplication {
 		// Dados do Funcionário e Folha pagamento:
 		System.out.println("****************   DADOS FUNCIONÁRIO   ***************");
 		System.out.println("______________________________________________________");
-		System.out.println("MATRÍCULA: " + atend1.matricula); // pq null?
+		System.out.println("MATRÍCULA: " + atend1.getMatricula()); // pq null?
 		System.out.println("NOME FUNCIONÁRIO: " + atend1.nome);
 		System.out.println("SETOR: " + Setor.ATENDIMENTO);
 		System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - ");
 		System.out.println("CPF: " + atend1.cpf);
 		System.out.println("ENDEREÇO: " + atend1.endereco);
 		System.out.println("FUNÇÃO: " + Funcao.ATENDENTE);
-		System.out.println("DATA CONTRATO: " + atend1.dataContrato); // pq null?
+		System.out.println("DATA CONTRATO: " + atend1.getDataContrato()); // pq null?
 		System.out.println("______________________________________________________");
 		System.out.println("***************   FOLHA DE PAGAMENTO   ***************");
 		System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - ");
@@ -54,7 +54,8 @@ public class TesterhApplication {
 		System.out.println("     Valor ATENDENTE 13 Salario: " + tributos.getDecimoTerSalario());
 		System.out.println("");
 		System.out.println("                TOTAL DESCONTOS: " + ((tributos.getFgts())
-				+ (tributos.getDecimoTerSalario() + tributos.getFerias() + tributos.getInss() + tributos.getFgts()))); // limitar decimais.
+				+ (tributos.getDecimoTerSalario() + tributos.getFerias() + tributos.getInss() + tributos.getFgts()))); // limitar
+																														// decimais.
 		System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - ");
 		System.out.println(
 				"Valor ATENDENTE LÍQUIDO salário: " + tributos.salarioLiquido + " ->  \u00AF\\_(\u30C4)_/\u00AF");
