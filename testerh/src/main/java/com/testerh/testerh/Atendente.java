@@ -2,6 +2,7 @@ package com.testerh.testerh;
 
 import com.testerh.testerh.Enum.Funcao;
 import com.testerh.testerh.Enum.Setor;
+import com.testerh.testerh.Funcionario;
 
 public class Atendente extends Funcionario {
 

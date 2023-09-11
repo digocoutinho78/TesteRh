@@ -30,7 +30,7 @@ public class TesterhApplication {
 		// Dados do Funcionário e Folha pagamento:
 		System.out.println("****************   DADOS FUNCIONÁRIO   ***************");
 		System.out.println("______________________________________________________");
-		System.out.println("MATRÍCULA: " + atend1.getMatricula()); // pq null?
+		System.out.println("MATRÍCULA: " + atend1.matricula); // pq null?
 		System.out.println("NOME FUNCIONÁRIO: " + atend1.nome);
 		System.out.println("SETOR: " + Setor.ATENDIMENTO);
 		System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - ");
@@ -42,7 +42,7 @@ public class TesterhApplication {
 		System.out.println("***************   FOLHA DE PAGAMENTO   ***************");
 		System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - ");
 		System.out.println(
-				"        Salario ATENDENTE BRUTO: " + atend1.getSalarioAtendente() + " ->   \u30FD(\u00B4\u25BD`)/");
+				"        Salario ATENDENTE BRUTO: " + atend1.getSalarioAtendente() + " ->   ( ^_^)");
 		System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - ");
 		System.out.println("********************   DESCONTOS   *******************");
 		System.out.println("");
@@ -58,7 +58,7 @@ public class TesterhApplication {
 																														// decimais.
 		System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - ");
 		System.out.println(
-				"Valor ATENDENTE LÍQUIDO salário: " + tributos.salarioLiquido + " ->  \u00AF\\_(\u30C4)_/\u00AF");
+				"Valor ATENDENTE LÍQUIDO salário: " + tributos.salarioLiquido + " ->  (-_-)");
 		System.out.println("______________________________________________________");
 
 	}
