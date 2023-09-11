@@ -14,7 +14,7 @@ public class Atendente extends Funcionario {
         super(id, nome, cpf, endereco, matricula, funcao, setor, dataContrato); // herdado da abstrata Funcionario
         Atendente.salarioAtendente = 1000; // valor de salario exclusivo do cargo atendente - dado privado
 
-    }
+    }//
 
     public static int getSalarioAtendente() {
         return salarioAtendente;
