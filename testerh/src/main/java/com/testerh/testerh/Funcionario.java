@@ -1,5 +1,8 @@
 package com.testerh.testerh;
 
+import java.time.LocalDateTime;
+import java.util.List;
+
 import com.testerh.testerh.Enum.Funcao;
 import com.testerh.testerh.Enum.Setor;
 
@@ -13,7 +16,7 @@ public abstract class Funcionario extends Pessoa {
 
     String matricula;
     Funcao funcao;
-    String dataContrato;
+    LocalDateTime dataContrato;
     Setor setor;
 
     public String getMatricula() {
@@ -32,11 +35,11 @@ public abstract class Funcionario extends Pessoa {
         this.funcao = funcao;
     }
 
-    public String getDataContrato() {
+    public LocalDateTime getDataContrato() {
         return dataContrato;
     }
 
-    public void setDataContrato(String dataContrato) {
+    public void setDataContrato(LocalDateTime dataContrato) {
         this.dataContrato = dataContrato;
     }
 
