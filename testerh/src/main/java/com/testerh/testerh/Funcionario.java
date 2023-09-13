@@ -1,6 +1,7 @@
 package com.testerh.testerh;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import com.testerh.testerh.Enum.Funcao;
@@ -16,7 +17,8 @@ public abstract class Funcionario extends Pessoa {
 
     String matricula;
     Funcao funcao;
-    LocalDateTime dataContrato;
+    String dataContrato = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")); // data da criacao da
+                                                                                                 // instancia
     Setor setor;
 
     public String getMatricula() {
@@ -35,11 +37,11 @@ public abstract class Funcionario extends Pessoa {
         this.funcao = funcao;
     }
 
-    public LocalDateTime getDataContrato() {
+    public String getDataContrato() {
         return dataContrato;
     }
 
-    public void setDataContrato(LocalDateTime dataContrato) {
+    public void setDataContrato(String dataContrato) {
         this.dataContrato = dataContrato;
     }
 
