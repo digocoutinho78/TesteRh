@@ -19,7 +19,7 @@ public class TesterhApplication {
 		SpringApplication.run(TesterhApplication.class, args);
 
 		Atendente atend1 = new Atendente(01, "Rodrigo Coutinho", "12345678921", "Rua dos bobos, 01", "5050",
-				Funcao.ATENDENTE, Setor.ATENDIMENTO, "15/10/23");
+				Funcao.ATENDENTE, Setor.ATENDIMENTO, "10/05/2023");
 		atend1.setSalarioAtendente(atend1.getSalarioAtendente()); // aqui está sendo confirmado que o valor de salario é
 																	// o que consta dentro da variavel Atendente. Este
 																	// valor não pode ser setado no momento da criação
