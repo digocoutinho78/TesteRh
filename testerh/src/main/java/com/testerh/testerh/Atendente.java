@@ -24,4 +24,12 @@ public class Atendente extends Funcionario {
         Atendente.salarioAtendente = salarioAtendente;
     }
 
+    public static int getGetSalarioAtendente() {
+        return getSalarioAtendente;
+    }
+
+    public static void setGetSalarioAtendente(int getSalarioAtendente) {
+        Atendente.getSalarioAtendente = getSalarioAtendente;
+    }
+
 }

@@ -1,6 +1,12 @@
 package com.testerh.testerh;
 
-import ch.qos.logback.core.net.SyslogOutputStream;
+import com.testerh.testerh.Funcionario;
+import com.testerh.testerh.Pessoa;
+import com.testerh.testerh.Enum.Funcao;
+import com.testerh.testerh.Enum.Setor;
+import com.testerh.testerh.Atendente;
+import com.testerh.testerh.Diretor;
+import com.testerh.testerh.Tributos;
 
 public class Print {
 
@@ -9,10 +15,12 @@ public class Print {
 
         // Dados do Funcionário e Folha pagamento:
 
+        Tributos tributos = new Tributos();
+
         System.out.println("****************   DADOS FUNCIONÁRIO   ***************");
         System.out.println("______________________________________________________");
-        System.out.println("MATRÍCULA: " + atend1.matricula); // pq null?
-        System.out.println("NOME FUNCIONÁRIO: " + atend1.nome);
+        System.out.println("MATRÍCULA: " + atend1.getMatricula); // pq null?
+        System.out.println("NOME FUNCIONÁRIO: " + atend1.getNome);
         System.out.println("SETOR: " + Setor.ATENDIMENTO);
         System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - ");
         System.out.println("CPF: " + atend1.cpf);

@@ -26,8 +26,6 @@ public class TesterhApplication {
 																	// valor não pode ser setado no momento da criação
 																	// do atend1.
 
-		Tributos tributos = new Tributos();
-
 		// // Dados do Funcionário e Folha pagamento:
 		// System.out.println("**************** DADOS FUNCIONÁRIO ***************");
 		// System.out.println("______________________________________________________");
